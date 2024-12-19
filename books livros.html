@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books livros</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" type="image/png">
+    <!-- Importando a fonte 'Poppins' do Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Estilo da barra de navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4f4f4;
+        }
+
+        /* Estilo do contêiner de cartas */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Estilo de cada carta */
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito de zoom ao passar o mouse sobre a carta */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo da imagem na carta */
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Estilo do título da carta */
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        /* Estilo das descrições na carta */
+        .card p {
+            margin: 0 0 10px;
+            color: #666;
+        }
+
+        /* Estilo das estrelas de avaliação */
+        .card .rating {
+            font-size: 1.2em;
+            color: gold;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com logo e título -->
+    <header>
+        <a href="books.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Logo da Livraria BINK">
+        </a>
+        <h1>Livraria BYTE</h1>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="books.html">Início</a>
+        <a href="books livros.html">Livros</a>
+        <a href="books eventos.html">Eventos</a>
+        <a href="books agradecimento.html">Sobre</a>
+        <a href="books contato.html">Contato</a>
+    </nav>
+
+    <!-- Seção de cartas -->
+    <section class="cards-container">
+        <!-- Carta 1 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/S-Postcard-Doug-Dorst/dp/0316201642/ref=sr_1_1?crid=3KU76E7GKW611&dib=eyJ2IjoiMSJ9._G540OkzYdE0o1u_dK4LvIbFiL_mvEIBLMZXsrfObDvWxhBpsMIq6YJ1eDDzYAQsvFSgZx35zMHJqJQZhPxRPg0QEVbBKFggHORrTVuFUV1TrZb08mCRb4eCYMGWjZHN1m2o3NevZCacChE2tln3UREF56V9RIYNzdjdsQ7KtRNssxjaGk4dUIuXi72Swmavi_xaTuKImH3XdjYg5EwsuKAZuVpKS1N3KHfE803OZIMySoBy7ZW3cbGYlkMIo1zhVMl_eaIS_r-DzA-J6DkMAI1lezil2zmN-1A3Ckyi_BM.WyAKuJKpIzBHTiOTJ9t4sBfpGI1O0y5iuKF3ZdONmfk&dib_tag=se&keywords=navio+de+teseu&qid=1722899264&sprefix=navio+de%2Caps%2C394&sr=8-1&ufe=app_do%3Aamzn1.fos.a492fd4a-f54d-4e8d-8c31-35e0a04ce61e'">
+            <img src="https://m.media-amazon.com/images/I/91pMQ7tKbyL._SY466_.jpg" alt="Imagem do Livro 1">
+            <h3>Navio de Teseu</h3>
+            <p>romance misterioso com anotações de dois leitores que tentam desvendar segredos ocultos.</p>
+            <div class="rating">
+                ★★★★☆
+            </div>
+        </div>
+
+        <!-- Carta 2 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/Di%C3%A1rio-Um-Banana-Jeff-Kinney/dp/8576831309/ref=sr_1_2?crid=XGIJPDJ272J3&dib=eyJ2IjoiMSJ9.8f8COP5SsT11ebP18l_0-1IBt-CqyRh5OEG1a9Fui6MOqMNzTOuyqidrKs8ZDb-4VxEiZhhycL_GcSI8qff0EhkjJuUUEZkng3sAfQe_0QLIzsIo4dxYeqqU8jq8s9tXafd0ec0qzocSlRQ9vcV8Yjj-SwALxpBZdxYSDQRXCbN51hKNEuLk8Z_7GdW1rEmzKI_wr9Ec-4EWkokpXEWu2EVs6zDtbK9TdH_YzjsmqGYQPzfuxM6fY2gdCjhw40bZENbbgpLt52zaF_L-0EHnA6Cm_vYcw0kWWz8BOfYTlrI.A4AgoLlh42MopL1srbHj_smdM9itI6m2caznz7UxNhk&dib_tag=se&keywords=diario+de+um+banana&qid=1722963581&sprefix=diario+de+u%2Caps%2C427&sr=8-2'">
+            <img src="https://m.media-amazon.com/images/I/41gBzGDn3XL._SY445_SX342_.jpg" alt="Imagem do Livro 2">
+            <h3>Diario de um banana</h3>
+            <p>Greg Heffley registra suas hilárias aventuras escolares e familiares em um diário ilustrado.</p>
+            <div class="rating">
+                ★★★★☆
+            </div>
+        </div>
+
+        <!-- Carta 3 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/guia-definitivo-mochileiro-das-gal%C3%A1xias/dp/8530601491/ref=sr_1_1?crid=39W78GD97SSZ5&dib=eyJ2IjoiMSJ9.S9lRAJbnoV7DcP4brFSSpdZlGDrSTRuJkH2S7sdv53CxsPPVNnAOCcmiAewgS6-Y6ur1NRDLChPgDGjN84hHCPd2CXw-JOAUgeOw5gb7sGwIDaXFAhsf4F2JuZ8EgznU0TMR6XEa0pzoAxNIpG_UGEnUPC7uUlm0eaDilEqDrfN06JXKA14tZ-qU_fsZNqiG_BvYvqiyJhJUfdZu6xoi7UWF8TH8D6kR6eP4JfJkZDWix371fYU2bVj7WiQxNSBqS2EgGJth-dTbp6PhKqcCvtHcGEqEN9FlL4Ye7A-2hsM.Xw6Q8zGmxF19Dc9bmY8a8XszWf_rt8dOW0jK-sEKpfc&dib_tag=se&keywords=guia+do+mochileiro+das+gal%C3%A1xias&qid=1722963903&sprefix=guia+do%2Caps%2C248&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9'">
+            <img src="https://m.media-amazon.com/images/I/51B7vacPfEL._SY445_SX342_.jpg" alt="Imagem do Livro 3">
+            <h3>O guia definitivo dos mochileiro das galaxias</h3>
+            <p>Uma hilariante e satírica jornada intergaláctica com Arthur Dent e seus amigos através do universo.</p>
+            <div class="rating">
+                ★★★★★
+            </div>
+        </div>
+
+        <!-- Carta 4 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/Roube-Artista-Dicas-Sobre-Criatividade/dp/8532528422/ref=sr_1_1?crid=LI3DVC8AS3QR&dib=eyJ2IjoiMSJ9.GJ7A3TFTR3WhidArR6DK5IMXtwAOYvrhI2gy_9270jesjE3gEPQjstZTWHcgb3rr2qpeOlo7oSheB18ePLnOKv8VYtsrbIEvaARCyeTYZ-diPo6FLB0OyF7qBI7xiabD3Q--TqpsNZFkXNn0baRNwy9YMIqCbt1Upzn2aMGjrqzgWh-wZeJUB4ik216yC2k2a0_eaMxeju6szlRKc7zXBv-Yr5NLOIkVieShmY6JVhXnuB4C6J_816Ccq87f375oqo3c9wPcJTOlCXKlCZgXF9cEHyf0Ptlckj5BwAtRKmc.hqjd3uIlV4FkROHdjz2ig-12AeLty8QvYUF1nUVEhQw&dib_tag=se&keywords=roube+como+um+artista&qid=1722964329&sprefix=roube+%2Caps%2C275&sr=8-1'">
+            <img src="https://m.media-amazon.com/images/I/51lI9is-gnL._SY466_.jpg" alt="Imagem do Livro 4">
+            <h3>Roube como um Artista</h3>
+            <p>Um guia inspirador com dez dicas práticas para desbloquear sua criatividade e encontrar sua própria voz.</p>
+            <div class="rating">
+                ★★★★★
+            </div>
+        </div>
+
+        <!-- Carta 5 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/mar-monstros-S%C3%A9rie-Jackson-olimpianos/dp/6555606525/ref=sr_1_1?crid=1JTWX42J0AQQR&dib=eyJ2IjoiMSJ9.MmlXeNhgivJ4eAuCQdMwvurWEf6pr4GJVKci_d22SqcdNDqM3CnGfcU6OFd0HAnDiu3zgW7W6A3bzWM8S-kv1mJk5wSbUkI2ZioZ2YnBBfhNkSLD9-7cBCuOLCj-FS-6Tm466r_0j_heH9Odc_fomxBKiL6nMJlI0YggXnbbsWL-12KlBfpONYNNdFn5jWq9w253xthEhbkI12zYU3dP3khiLjm7O5OfBkT0rFiwgtNKVJMUh2UmPDcEqk9shOhxUXMSQyZffIEH-4W7azomR2w2HjGtPM7e4OvwfRtSPqY.NKSo8qIz0SKvMBc3X7mt8WSCZIvM060nK_-ck9yVDr8&dib_tag=se&keywords=o+mar+de+monstros&qid=1722964806&sprefix=o+mar+de+m%2Caps%2C235&sr=8-1'">
+            <img src="https://m.media-amazon.com/images/I/51JfKjFdLIL._SY445_SX342_.jpg" alt="Imagem do Livro 5">
+            <h3>Percy Jackson e os olimpianos</h3>
+            <p>Percy Jackson e seus amigos enfrentam perigos míticos para salvar o acampamento Meio-Sangue.</p>
+            <div class="rating">
+                ★★★★☆
+            </div>
+        </div>
+
+        <!-- Carta 6 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/Anne-green-gables-Lucy-Montgomery/dp/8538092669/ref=sr_1_5?crid=2OZAU2EVBN8I6&dib=eyJ2IjoiMSJ9.uxUqdUBemFEODr562JJhgezI6yKSFYsFOTXs_Hnlx8ltBUt8YnmKFcIq0T5wiXa4OVYGOFk2--hYFUPXbD7AlyMP5Nx6vEcPpUTYSwJ5QuY1uPNjKo6D1ZQcHH-iIwUPBCA1IaEQfiqyPVUtjzDudNxFBY4xwF-ZV5DrUr6A_O5cDrlRqbJ6vXBWiTmTJTo5uLFkWji3NGOgJdWBA-XpC3qRISO4ugLOtjoZ39Wp0e7OCwMexfruChGl9jTymrG-AgLOm563XJaZuq-S3KxgqHKc8tvYxdCuhggHhpWXc9M.aCoOCJYnUo1zAd1t6dQhlZOxIqdFC1SeKO6QUg--hdE&dib_tag=se&keywords=annie+de+green+gables&qid=1722965388&sprefix=annie+de%2Caps%2C364&sr=8-5'">
+            <img src="https://m.media-amazon.com/images/I/513yOc9k7LL._SY445_SX342_.jpg" alt="Imagem do Livro 6">
+            <h3>Anne de Green Gables</h3>
+            <p>A órfã Anne Shirley transforma a vida dos irmãos Cuthbert e a comunidade de Avonlea com sua imaginação e espírito exuberante.</p>
+            <div class="rating">
+                ★★★☆☆
+            </div>
+        </div>
+
+        <!-- Carta 7 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/1984-George-Orwell/dp/6555981520/ref=sr_1_5?crid=26X5YPEPJ4W7Y&dib=eyJ2IjoiMSJ9.YmAQI_v2aNNn_GqixoPw_aG_Hjmr6MLRvi7tGv6M6wB6X3YHjP4WgxtL-Vu1uZPgxNK4GcPAIZL6d-31o2OQ1TSuaB1OfrDuo_koR16Quo90N-CPwFLParaZQvIW2s83jQrmlELIvfPfUXTk_au1RTbQsjXicqkBbBWJZrUNWm4CyVW3O3QQAPrxqCiNKpIg1G2ONpBaSYSwrt_6gte_YPaGuWQ5QOeKrV2IjSmGBclqwX8JQgdZ2X8Ti0WXRuiFX_FQQSUsL-U6dM6vfSt2g7_r_a0ua1yK6d7gb5l5zaw.7XnGhuAc9AA34Ngx-vqlOPep3eaGNyyqDfyYi8op_8o&dib_tag=se&keywords=1984&qid=1722965918&sprefix=1%2Caps%2C959&sr=8-5https://www.amazon.com.br/1984-George-Orwell/dp/6555981520/ref=sr_1_5?crid=26X5YPEPJ4W7Y&dib=eyJ2IjoiMSJ9.YmAQI_v2aNNn_GqixoPw_aG_Hjmr6MLRvi7tGv6M6wB6X3YHjP4WgxtL-Vu1uZPgxNK4GcPAIZL6d-31o2OQ1TSuaB1OfrDuo_koR16Quo90N-CPwFLParaZQvIW2s83jQrmlELIvfPfUXTk_au1RTbQsjXicqkBbBWJZrUNWm4CyVW3O3QQAPrxqCiNKpIg1G2ONpBaSYSwrt_6gte_YPaGuWQ5QOeKrV2IjSmGBclqwX8JQgdZ2X8Ti0WXRuiFX_FQQSUsL-U6dM6vfSt2g7_r_a0ua1yK6d7gb5l5zaw.7XnGhuAc9AA34Ngx-vqlOPep3eaGNyyqDfyYi8op_8o&dib_tag=se&keywords=1984&qid=1722965918&sprefix=1%2Caps%2C959&sr=8-5'">
+            <img src="https://m.media-amazon.com/images/I/71ynUCxXgWL._SY466_.jpg" alt="Imagem do Livro 7">
+            <h3>1984</h3>
+            <p>Em um regime totalitário, Winston Smith luta contra a opressão e a vigilância constante do Grande Irmão.</p>
+            <div class="rating">
+                ★★★★☆
+            </div>
+        </div>
+
+        <!-- Carta 8 -->
+        <div class="card" onclick="window.location.href='https://www.amazon.com.br/sombra-vento-Carlos-Ruiz-Zaf%C3%B3n/dp/8556510345/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13ESGJ3YJZVUO&dib=eyJ2IjoiMSJ9.8_JA9keBHDEHo3tejDu-PAK-IjCGh-v0lXQIWywBZigcyHv-ORNdtBTlhVIQIb9mdpmL-9XoPGPMI6qGZVBTKIHoIpDSpxZvTfOe04WK2Vx4IM38GQohB91hq7Kk1ctUJxho4FvJwukrMRZcyxgvlizc4AmaPB6BWF4ZF9ilrgl9SygMNYs2hdP98es5HTaE9Iy0_dF-brr6f5OQ4KpYfLs6Rfr6HP3SJQwt8_j2NZk3ysHVQv54Ohw__dE3wl7g5DIq1WHeaMNZgDAIKhtyzCuu-vfagouPh0IaLIh0kos.qoolwcEXK-zV2Lra75nPKaKL-gb58KM-yqT5-1V1dos&dib_tag=se&keywords=A+Sombra+do+Vento&qid=1722966457&sprefix=a+sombra+do+vento%2Caps%2C253&sr=8-1'">
+            <img src="https://m.media-amazon.com/images/I/51JpWJwwJ9L._SY445_SX342_.jpg" alt="Imagem do Livro 8">
+            <h3>A Sombra do vento</h3>
+            <p>Daniel Sempere descobre um livro misterioso e desenterra segredos profundos sobre seu autor e sua própria vida em Barcelona pós-Guerra Civil.</p>
+            <div class="rating">
+                ★★★★☆
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 por BYTE. Livraria & Editora.</p>
+        <p>Rua Pines, 137 - C. avenue, São Paulo - SP, 12345-067</p>
+        <p>Telefone: (12) 98123-4567</p>
+    </footer>
+</body>
+</html>
